@@ -1,0 +1,132 @@
+#bookings{
+	background-color: #bc0144;
+}
+.main{
+	text-align: center;
+}
+.main .title{
+	font-size: calc(1.75vw + 1.75vh);
+	color: #000000;
+	font-weight: 500;
+	margin-top: 2vh;
+}
+.main .text_box ul{
+	list-style-type: none;
+	margin-left: 5vw;
+}
+.main .text_box span{
+	font-size: calc(1vh + 1vw);
+	font-weight: 500;
+	color: black;
+}	
+
+.main .text_box li{
+	margin-bottom: 3px;
+	margin-left: 0;
+	list-style-type: none;
+	list-style: 0;
+}
+.main .text_box li .separator{
+	padding-left: 5%;
+}
+
+.main .text_box input{
+	width: calc(20vw + 20vh);
+	height: calc(1.2vw + 1.2vh);
+	font-size: calc(0.7vw + 0.7vh);
+	font-weight: 500;
+	color: #F6075A;
+	border: 1.5px solid #f6075a;
+	padding-left: 3.5%;
+	font-family: inherit;
+	border-radius: 0;  
+}
+
+.main .text_box select{
+	width: calc(20vw + 20vh);
+	height: calc(1.2vw + 1.2vh);
+	font-size: calc(0.7vw + 0.7vh);
+	font-weight: 500;
+	color: #F6075A;
+	border: 1.5px solid #f6075a;
+	padding-left: 3%;
+	font-family: inherit;
+	border-radius: 0;  
+}
+
+.main .button_box button{
+	background-color: #f6075a;
+  	border: none;
+  	color: white;
+  	padding: 8px 12px;
+  	text-decoration: none;
+  	font-size: 15px;
+  	text-align: center;
+}
+
+.main .button_box button:hover {
+  box-shadow: 3px 5px 10px 2px #976073;
+}
+
+#guest_phone_input_cc{ 
+	text-align: left;
+	width: calc(3vw + 3vh);	
+}
+#guest_phone_input_no{ 
+	text-align: left;
+	width: calc(16.7vw + 16.7vh);
+}
+#save_button{
+	position: absolute;
+	top: 0;
+	right:10%;
+}
+#allocate_button{
+	position: absolute;
+	top: 0;
+	left:10%;
+}
+#reschedule_button{
+	position: absolute;
+	top: 0;
+	right:0;
+}
+#cancel_button{
+	position: absolute;
+	top: 0;
+	left:0;
+}
+
+@media (max-width: 575.98px) {
+	.main .text_box input{
+		width: calc(25vw + 25vh);
+		height: calc(2vw + 2vh);
+		font-size: calc(1vw + 1vh);
+		font-weight: 500;
+		color: #F6075A;
+		border: 1.5px solid #f6075a;
+		padding-left: 3.5%;
+		font-family: inherit;
+		border-radius: 0;  
+	}
+
+	.main .text_box select{
+		width: calc(25vw + 25vh);
+		height: calc(2vw + 2vh);
+		font-size: calc(1vw + 1vh);
+		font-weight: 500;
+		color: #F6075A;
+		border: 1.5px solid #f6075a;
+		padding-left: 3%;
+		font-family: inherit;
+		border-radius: 0;  
+	}
+	#guest_phone_input_cc{ 
+		text-align: left;
+		width: calc(4.5vw + 4.5vh);	
+	}
+	#guest_phone_input_no{ 
+		text-align: left;
+		width: calc(20vw + 20vh);
+	}
+}

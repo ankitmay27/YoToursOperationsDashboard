@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yo Tours Login</title>
+
+    <meta name="description" content="Project : College Integration">
+    <meta name="author" content="Rahul Kumar">
+    <meta name="viewport" content="width=device-width" initial-scale=1 />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,200,600,700,800" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/login_style.css" rel="stylesheet">
+    <script src="js/login_scripts.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-10">
+		</div>
+		<div class="col-md-2" style="text-align: center; margin-top: 20px;">
+		    <img id="logo" src="image/pink_logo.png">
+    	</div>
+	</div>
+	<br><br><br><br>
+	<div class="row">
+		<div class="col-md-3">
+		</div>
+		<div class="col-md-6" >
+			<div class="row">
+				<div class="col-md-12">
+					<label for="login_username_input" class="login_username_input">
+				        <input type="text" id="login_username_input" placeholder="&nbsp;">
+				        <span class="label">Username</span>
+			    	</label>
+			      <br><br>
+			      <label for="login_password_input" class="login_password_input">
+			        <input type="password" id="login_password_input" placeholder="&nbsp;">
+			        <span class="label">Password</span>
+			      </label>
+			      <br>
+			      <input style="margin-left: 5%;" id="show_password_input" type="checkbox" onclick="showPasswordClicked()">
+				  <span class="show_pass">Show Password</span>
+			      	
+				</div>
+			</div>
+			<br>
+			<div class="row" >
+				<div  class="col-md-6 col-sm-6">
+					  <div class="g-recaptcha" data-sitekey="6Lc18oQUAAAAAOyjZKH6eMYDE-PNBWvADBlY01Re"></div>
+				</div>
+				<div class="login_lower col-md-6 col-sm-6">
+					<button id="login_button" onclick="loginButtonClicked()">
+				    	LOGIN
+				    </button>
+			    </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+		</div>
+	</div>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/login_scripts.js"></script>
+  </body>
+</html>

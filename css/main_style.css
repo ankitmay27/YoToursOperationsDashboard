@@ -1,0 +1,117 @@
+.disable_screen{
+  pointer-events:none;
+  opacity: 0.4;
+}
+.disable_screen2{
+  pointer-events:none;
+  opacity: 0.95;
+}
+.user_image_box{
+	overflow: hidden;
+}
+.profile_box img{
+  height:calc(5.2vw + 5.2vh);
+  width:calc(5.2vw + 5.2vh);
+  margin-top:calc(0.5vw + 0.5vh);
+  padding-bottom: calc(0.5vw + 0.5vh);
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.add_bookings img{
+    cursor: pointer;
+	  margin-top: calc(0.8vw + 0.8vh);
+    height: calc(2.5vw + 2.5vh);
+    width: calc(2.5vw + 2.5vh) ;
+}
+.add_bookings label{
+  cursor: pointer;
+  font-size: calc(0.8vw + 0.8vh);
+  color: #FFFFFF;
+  font-weight: 400;/*overridden*/
+}
+#user_name {
+  font-size: calc(0.9vw + 0.9vh);
+  color: #FFFFFF;
+  font-weight: 300;/*overriding*/
+  margin-top: calc(0.75vw + 0.75vh); 
+}
+#user_designation {
+  font-size: calc(0.9vw + 0.9vh);
+  color: #FFFFFF;
+  font-weight: 300;/*overriding*/
+  margin-top: calc(-0.4vw + -0.4vh); 
+  display: block;
+}
+#user_location {
+  font-size: calc(0.9vw + 0.9vh);
+  color: #FFFFFF;
+  font-weight: 300;/*overriding*/
+  margin-top: calc(-0.4vw + -0.4vh); 
+  display: block;
+}
+.sidebar{
+	background-color: #f6075a;
+	text-align: center;
+	padding: 0;
+}
+.sidebar ul{
+	width: 100%;
+	list-style-type: none;
+	padding: 0;
+}
+
+.sidebar li{
+	padding-top: 1vw;
+	padding-bottom: 0.75vw;
+  font-weight: 500;
+	font-size: calc(1.2vw + 1.2vh);
+	color: #ffffff;
+  cursor: pointer;
+}
+.main{
+  text-align: center;
+}
+
+.main label{
+  font-size: calc(1.5vw + 1.5vh);
+  color: #f6075a;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+#home_image{
+  width: calc(10vw + 10vh);
+  height: calc(10vw + 10vh);
+  margin-top: calc(10vw + 10vh);
+}
+@media (min-width: 576px) {
+  .header_row{
+    background-color: #f6075a;
+    max-height: calc(5.6vh + 5.6vw);
+  }
+  .main_shadow{
+    box-shadow:7px 9px 10px 2px #976073;
+  }
+}
+@media (max-width: 575.98px) {
+  .header_row{
+    background-color: #f6075a;
+  }
+  .add_bookings {
+      max-width: 20% ;
+  }
+  .header_blank_space{
+      visibility: hidden;
+      max-width: 0%;
+  }
+  .profile_box{
+      max-width: 70% ;
+  }
+  .profile_box .details{
+    max-width: 75% ;    
+  }
+  .profile_box .user_image_box{
+    max-width: 25% ;    
+  }
+}

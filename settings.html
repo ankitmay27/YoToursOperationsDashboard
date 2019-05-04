@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yo Tours Login</title>
+
+    <meta name="description" content="Project : College Integration">
+    <meta name="author" content="Rahul Kumar">
+    <meta name="viewport" content="width=device-width" initial-scale=1 />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,200,600,700,800" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main_style.css" rel="stylesheet">
+    <script src="js/main_scripts.js"></script>
+    <link href="css/settings_style.css" rel="stylesheet">
+    <script src="js/settings_scripts.js"></script>
+   </head>
+  <body>
+  	<div class="container-fluid" style="display: block;">
+		<div class="row header_row main_shadow">
+			<div class="col-md-2 col-sm-2 add_bookings" style="text-align: center;">
+			    <img title="Add New Booking" onclick="addNewBooking()" id="add_booking_button" src="image/plus_icon.png">
+			    <div class="row" >
+			    	<div class="col-md-12 col-sm-12 col-xs-12" style="text-align: center;">
+			    		<label title="Add New Booking"  onclick="addNewBooking()" id="add_new_bookings_text"> ADD NEW BOOKING </label>
+			    	</div>
+			    </div>	
+    		</div>
+			<div class="col-md-5 col-sm-5 header_blank_space" >
+			</div>
+			<div class="col-md-5 col-sm-5 profile_box">
+				<div class="row" >
+					<div class="col-md-9 col-sm-8 details" style="text-align: right;">
+						<label id="user_name"> USER NAME </label>
+						<label id="user_designation"> USER DESIGNATION </label>
+						<label id="user_location"> USER LOCATION </label>
+					</div>
+					<div class="col-md-3 col-sm-4 user_image_box" style="text-align: left;">
+					    <a id="user_img_download" download><img width="100px" onclick="uploadPhoto()" id="user_img" alt="Select File" title="Select File" src="image/person_icon.png"></a>
+    					<br />
+						<span id="user_span_file"></span>
+						<input type="file" id="user_img_upload" style="display: none" />
+    				</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 col-sm-2 col-xs-1 col-12 sidebar main_shadow">
+				<ul>
+					<li id="bookings" onclick="open_bookings()">BOOKINGS</li>
+					<li id="inventory" onclick="open_inventory()">INVENTORY</li>
+					<li id="storytellers" onclick="open_storytellers()">STORYTELLERS</li>
+					<li id="report" onclick="open_report()">REPORT</li>
+					<li id="settings" onclick="open_settings()">SETTINGS</li>
+				</ul>
+			</div>
+			<div class="col-md-9 col-sm-8 col-xs-8 main">
+				<label class="title"> SETTINGS </label><br>( SELECT Rows to modify value )<br>
+				<div class="row sub_main">
+					<div style="text-align: left;" class="col-md-6 col-sm-6 col-xs-6 col-6 list">
+						<label> TOUR NAME </label>
+						<button onclick="ItemClicked(0,this.id)" id="tourname"> ADD NEW</button>	
+							 
+						<ul id="tourname_list">
+						</ul>
+						<div id="tourname_button_box" style="text-align: center;visibility: hidden;">
+							<button onclick="ItemClicked(1,this.id)" id="tourname"> EDIT </button>	
+							<button onclick="ItemClicked(2,this.id)" id="tourname"> DELETE </button>
+						</div>
+					</div>
+					<div style="text-align: left;" class="col-md-6 col-sm-6 col-xs-6 col-6 list">
+						<label> CITY </label>
+						<button onclick="ItemClicked(0,this.id)" id="city"> ADD NEW</button>	
+							
+						<ul id="city_list">
+						</ul>
+						<div id="city_button_box" style="text-align: center;visibility: hidden;">
+							<button onclick="ItemClicked(1,this.id)" id="city"> EDIT </button>	
+							<button onclick="ItemClicked(2,this.id)" id="city"> DELETE </button>
+						</div>
+						<br>
+						<label> TOUR TYPE </label>
+						<button onclick="ItemClicked(0,this.id)" id="tourtype"> ADD NEW</button>	
+						
+						<ul id="tourtype_list">
+						</ul>
+						<div id="tourtype_button_box" style="text-align: center;visibility: hidden;">
+							<button onclick="ItemClicked(1,this.id)" id="tourtype"> EDIT </button>	
+							<button onclick="ItemClicked(2,this.id)" id="tourtype"> DELETE </button>
+						</div>
+					</div>
+				</div>	
+				<div class="row sub_main">
+					<div style="text-align: left;" class="col-md-4 col-sm-4 col-xs-6 col-6 list">
+						<label> TIME SLOT </label>
+						<button onclick="ItemClicked(0,this.id)" id="timeslot"> ADD NEW</button>	
+						<ul id="timeslot_list">
+						</ul>
+						<div id="timeslot_button_box" style="text-align: center;visibility: hidden;">
+							<button onclick="ItemClicked(1,this.id)" id="timeslot"> EDIT </button>	
+							<button onclick="ItemClicked(2,this.id)" id="timeslot"> DELETE </button>
+						</div>
+					</div>
+					<div style="text-align: left;" class="col-md-4 col-sm-4 col-xs-6 col-6 list">
+						<label> PAYMENT TYPE </label>
+						<button onclick="ItemClicked(0,this.id)" id="paytype"> ADD NEW</button>	
+						<ul id="paytype_list">
+						</ul>
+						<div id="paytype_button_box" style="text-align: center;visibility: hidden;">
+							<button onclick="ItemClicked(1,this.id)" id="paytype"> EDIT </button>	
+							<button onclick="ItemClicked(2,this.id)" id="paytype"> DELETE </button>
+						</div>
+					</div>
+					<div style="text-align: left;" class="col-md-4 col-sm-4 col-xs-6 col-6 list">
+						<label> BOOKING CHANNEL </label>
+						<button onclick="ItemClicked(0,this.id)" id="channel"> ADD NEW</button>	
+						<ul id="channel_list">
+						</ul>
+						<div id="channel_button_box" style="text-align: center;visibility: hidden;">
+							<button onclick="ItemClicked(1,this.id)" id="channel"> EDIT </button>	
+							<button onclick="ItemClicked(2,this.id)" id="channel"> DELETE </button>
+						</div>
+					</div>
+				</div>
+				<button onclick="logoutUser()" id="logout_button"> LOGOUT </button><br>	
+				<br><br>
+			</div>
+		</div>
+	</div>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main_scripts.js"></script>
+  	<script src="js/settings_scripts.js"></script>
+  </body>
+</html>

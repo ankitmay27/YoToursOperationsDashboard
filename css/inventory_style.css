@@ -1,0 +1,106 @@
+#inventory{
+	background-color: #bc0144;
+}
+.main .title{
+	font-size: calc(1.75vw + 1.75vh);
+	color: #000000;
+	font-weight: 500;
+	margin-top: 2vh;
+}
+#view_inventory_button{
+	color: white;
+	padding: calc(0.4vw + 0.4vh) calc(0.8vw + 0.8vh);
+	background-color: #f6075a;
+	font-family: inherit;
+	border: 0;
+	font-size: calc(0.8vw + 0.8vh);
+}
+#create_inventory_button{
+	color: white;
+	padding: calc(0.4vw + 0.4vh) calc(0.8vw + 0.8vh);
+	background-color: #f6075a;
+	font-family: inherit;
+	border: 0;
+	font-size: calc(0.8vw + 0.8vh);
+}
+#view_inventory_button:hover{
+	box-shadow:3px 3px 1px 1px #976073;  
+}#create_inventory_button:hover{
+	box-shadow:3px 3px 1px 1px #976073;  
+}
+
+.main .row .details table tr{
+	background-color: #e1e1e1;
+	color: #000000;
+	font-size: calc(0.7vh + 0.7vw);
+	font-weight: 450;
+	text-align: left;
+}
+.main .row .details table tr th{
+	/*max-width: calc(30vw + 30vh);*/
+	padding-top: calc(0.1vh + 0.1vw); 
+	min-width: calc(10vw + 10vh);
+	background-color: #f6075a;
+	color: #ffffff;
+	font-size: calc(0.8vw + 0.8vh);
+	font-weight: 500;
+	border-left: calc(0.1vh + 0.1vw) solid #ffffff;
+	border-right: calc(0.1vh + 0.1vw) solid #ffffff;
+	text-align: center;
+}
+.main .row .details table tr th input{
+	width: calc(8vw + 8vh);
+	font-size: calc(0.5vw + 0.5vh);
+	font-weight: 500;
+	color: #F6075A;
+	font-family: inherit;
+	margin-left: calc(0.3vw + 0.3vh);
+	margin-bottom: calc(0.3vw + 0.3vh);
+}
+.main .row .details table tr th img{
+	margin-left:calc(0.5vw + 0.5vh); 
+	margin-right:calc(0.3vw + 0.3vh); 
+	width: calc(0.4vw + 0.4vh);
+	height: calc(0.3vw + 0.3vh);
+
+}
+.main .row .details table tr td{
+	/*max-width: calc(30vw + 30vh);*/
+	min-width: calc(10vw + 10vh);
+	border-left: calc(0.1vh + 0.1vw) solid #ffffff;
+	border-right: calc(0.1vh + 0.1vw) solid #ffffff;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 1vw;
+}
+
+.main .row .details table tr td select{
+	width: calc(30vw + 30vh);
+	height: calc(1vw + 1vh);
+	font-size: calc(0.6vw + 0.6vh);
+	font-weight: 500;
+	border: 1px solid #ffffff;
+	font-family: inherit;
+	padding-left: 0vw;
+	border-radius: 0;  
+	margin-left: 0vw;
+	margin-right: 2vw;
+}
+
+.main .button_box button{
+	/*width: calc();*/
+	height: 100%;
+  	background-color: #f6075a;
+  	border: none;
+  	color: white;
+  	padding: 1vh 1vw;
+  	text-decoration: none;
+  	font-size: calc(0.6vw + 0.6vh);
+  	margin: 0;
+  	text-align: center;
+	margin-left:calc(0.5vw + 0.5vh); 
+}
+
+.main .button_box button:hover {
+	box-shadow:3px 3px 1px 1px #976073;  
+}
